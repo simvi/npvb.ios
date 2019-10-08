@@ -531,24 +531,15 @@
 			isa = PBXGroup;
 			children = (
 				D763EBA9228F057100565742 /* AppDelegate.swift */,
-				D7D8DAF2234C79D500976D7F /* ViewControllers */,
-				D7D8DAF1234C79A600976D7F /* NavigationControllers */,
+				D763EBB2228F057200565742 /* LaunchScreen.storyboard */,
 				D7D8DAF3234C7B0E00976D7F /* Data */,
 				D7D8DAF4234C7B4500976D7F /* Models */,
-				D77434CB233A091C00910B48 /* EventTableViewCell.h */,
-				D77434CF233A091C00910B48 /* EventTableViewCell.m */,
-				D7D8DAF5234C7B6600976D7F /* Tabbar */,
-				D77434F1233A092F00910B48 /* MembersTableViewCell.h */,
-				D77434E1233A092D00910B48 /* MembersTableViewCell.m */,
 				D7D8DAF6234C7B8300976D7F /* Extern */,
-				D77434E5233A092E00910B48 /* OtherTableViewCell.h */,
-				D77434DE233A092D00910B48 /* OtherTableViewCell.m */,
-				D77434E8233A092E00910B48 /* Nantes PVB-Info.plist */,
-				D763EBB0228F057200565742 /* Assets.xcassets */,
+				D7D8DAF1234C79A600976D7F /* NavigationControllers */,
+				D7D8DAF2234C79D500976D7F /* ViewControllers */,
+				D7EA970A234C92D30097B074 /* TableViewCells */,
+				D7D8DAF5234C7B6600976D7F /* Tabbar */,
 				D77435D9233A09DF00910B48 /* Supporting Files */,
-				D763EBB2228F057200565742 /* LaunchScreen.storyboard */,
-				D763EBB5228F057200565742 /* Info.plist */,
-				D77434B6233A089A00910B48 /* NantesPVB-Bridging-Header.h */,
 			);
 			path = NantesPVB;
 			sourceTree = "<group>";
@@ -729,6 +720,10 @@
 		D77435D9233A09DF00910B48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D77434E8233A092E00910B48 /* Nantes PVB-Info.plist */,
+				D763EBB0228F057200565742 /* Assets.xcassets */,
+				D763EBB5228F057200565742 /* Info.plist */,
+				D77434B6233A089A00910B48 /* NantesPVB-Bridging-Header.h */,
 				D77435DA233A09DF00910B48 /* Database */,
 				D77435DD233A09DF00910B48 /* Images */,
 			);
@@ -1002,6 +997,19 @@
 				D7743510233A094000910B48 /* UIScreen+FourInch.m */,
 			);
 			path = Extern;
+			sourceTree = "<group>";
+		};
+		D7EA970A234C92D30097B074 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D77434E5233A092E00910B48 /* OtherTableViewCell.h */,
+				D77434DE233A092D00910B48 /* OtherTableViewCell.m */,
+				D77434F1233A092F00910B48 /* MembersTableViewCell.h */,
+				D77434E1233A092D00910B48 /* MembersTableViewCell.m */,
+				D77434CB233A091C00910B48 /* EventTableViewCell.h */,
+				D77434CF233A091C00910B48 /* EventTableViewCell.m */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
