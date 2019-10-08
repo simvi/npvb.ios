@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Personnal. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "Member.h"
 
 @interface MembersTableViewCell : UITableViewCell {

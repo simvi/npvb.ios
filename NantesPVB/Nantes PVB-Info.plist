@@ -66,8 +66,6 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
-	<key>UIApplicationExitsOnSuspend</key>
-	<true/>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiresFullScreen</key>
@@ -81,9 +79,9 @@
 				<key>Blue</key>
 				<real>0.023</real>
 				<key>Green</key>
-				<real>0.75600000000000001</real>
+				<real>0.756</real>
 				<key>Red</key>
-				<real>0.94099999999999995</real>
+				<real>0.9409999999999999</real>
 			</dict>
 		</dict>
 	</dict>

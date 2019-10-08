@@ -24,7 +24,7 @@
 		self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 0.0, self.frame.size.width-20.0, self.frame.size.height)];
         [titleLabel setAutoresizingMask:(UIViewAutoresizingFlexibleWidth)];
 		[titleLabel setBackgroundColor:[UIColor clearColor]];
-		[titleLabel setTextColor:kColorTitleGray];
+		[titleLabel setTextColor:[UIColor colorWithRed:71.0/255.0 green:71.0/255.0 blue:71.0/255.0 alpha:1.0]];
 		[titleLabel setNumberOfLines:0];
         [titleLabel setFont:[UIFont systemFontOfSize:13.0]];
 		[[self contentView] addSubview:titleLabel];
@@ -32,7 +32,7 @@
         
         UIView *grayView = [[UIView alloc] initWithFrame:CGRectMake(0.0, self.contentView.frame.size.height-1.0, self.contentView.frame.size.width, 1.0)];
         [grayView setAutoresizingMask:(UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin)];
-        [grayView setBackgroundColor:kColorBgGray];
+        [grayView setBackgroundColor:[UIColor colorWithRed:228.0/255.0 green:228.0/255.0 blue:228.0/255.0 alpha:1.0]];
         [[self contentView] addSubview:grayView];
         [grayView release];
 
