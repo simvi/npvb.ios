@@ -52,7 +52,7 @@
         [texteLabel setBackgroundColor:[UIColor clearColor]];
         [texteLabel setTextColor:[UIColor colorWithRed:71.0/255.0 green:71.0/255.0 blue:71.0/255.0 alpha:1.0]];
         [texteLabel setNumberOfLines:0];
-        [texteLabel setText:@"Bienvenue sur Nantes PVB.\nAvec l'application, accédez à différentes fonctionnalités:\n-Inscription au évènements\n-Liste des joueurs\n-Accés à la fiche d'un joueur\n\nCette application a été développée par\nSimon VIAUD.\n\nPour toute remarque ou suggestion, vous pouvez le contacter par mail: simon.viaud@gmail.com."];
+        [texteLabel setText:@"Bienvenue sur Nantes PVB.\nAvec l'application, accédez à différentes fonctionnalités:\n-Inscription aux évènements\n-Liste des joueurs\n-Accès à la fiche d'un joueur\n\nCette application a été développée par\nSimon VIAUD.\n\nPour toute remarque ou suggestion, vous pouvez le contacter par mail: simon.viaud@gmail.com."];
         [texteLabel setFont:[UIFont systemFontOfSize:13.0]];
         [self.view addSubview:texteLabel];
         [texteLabel release];
