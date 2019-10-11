@@ -288,19 +288,12 @@
             }
             
         }
-        
+
         if ([presentsArray count]>0) {
             self.membersArray = [MemberDao getMembersWithIds:presentsArray];
-
-            [inscritsTitleLabel setAlpha:1.0];
-            [inscritsTitleLabel setText:[NSString stringWithFormat:@"Inscrits:\n(%i)", (int)[membersArray count]]];
-            
         }
         else {
-
             self.membersArray = nil;
-            [inscritsTitleLabel setAlpha:0.0];
-            
         }
 
         [presentsArray release];
@@ -312,6 +305,16 @@
 }
 
 - (void)loadPresenceFinished {
+
+    // Update UI in main thread
+    if ([membersArray count] > 0) {
+        [inscritsTitleLabel setAlpha:1.0];
+        [inscritsTitleLabel setText:[NSString stringWithFormat:@"Inscrits:\n(%i)", (int)[membersArray count]]];
+    }
+    else {
+        self.membersArray = nil;
+        [inscritsTitleLabel setAlpha:0.0];
+    }
     
     [(AppDelegate*)[[UIApplication sharedApplication] delegate] hideLoadingView];
     
