@@ -7,7 +7,7 @@
 //
 //  Create an ASIS3ServiceRequest to obtain a list of your buckets
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "ASIS3Request.h"
 
 @class ASIS3Bucket;

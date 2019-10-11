@@ -6,7 +6,7 @@
 //  Copyright 2010 All-Seeing Interactive. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 @class ASIHTTPRequest;
 
 // Cache policies control the behaviour of a cache and how requests use the cache

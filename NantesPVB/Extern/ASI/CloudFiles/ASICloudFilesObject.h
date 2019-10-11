@@ -4,7 +4,7 @@
 //  Created by Michael Mayo on 1/7/10.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 
 @interface ASICloudFilesObject : NSObject {

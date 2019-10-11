@@ -8,7 +8,7 @@
 // A class for accessing data stored on Amazon's Simple Storage Service (http://aws.amazon.com/s3/) using the REST API
 // While you can use this class directly, the included subclasses make typical operations easier
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "ASIHTTPRequest.h"
 
 #if !TARGET_OS_IPHONE || (TARGET_OS_IPHONE && __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_4_0)
