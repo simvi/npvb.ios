@@ -6,7 +6,7 @@
 //  Copyright 2009 All-Seeing Interactive. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @class ASIHTTPRequest;
 

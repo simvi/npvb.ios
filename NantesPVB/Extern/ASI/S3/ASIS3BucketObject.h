@@ -8,7 +8,7 @@
 //  Instances of this class represent objects stored in a bucket on S3
 //  ASIS3BucketRequests return an array of ASIS3BucketObjects when you perform a list query
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 @class ASIS3ObjectRequest;
 
 @interface ASIS3BucketObject : NSObject <NSCopying> {

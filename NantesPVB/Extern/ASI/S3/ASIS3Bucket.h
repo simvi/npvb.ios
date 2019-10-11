@@ -9,7 +9,7 @@
 //  ASIS3ServiceRequests return an array of ASIS3Buckets when you perform a service GET query
 //  You'll probably never need to create instances of ASIS3Bucket yourself
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 
 @interface ASIS3Bucket : NSObject {

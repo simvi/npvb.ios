@@ -7,7 +7,7 @@
 //
 //  Use this class to create buckets, fetch a list of their contents, and delete buckets
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "ASIS3Request.h"
 
 @class ASIS3BucketObject;
