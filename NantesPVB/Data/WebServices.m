@@ -10,6 +10,30 @@
 #import "Reachability.h"
 #import "ASIFormDataRequest.h"
 
+@interface ThreadSafeHTTPRequest : ASIHTTPRequest
+
+@end
+
+@implementation ThreadSafeHTTPRequest
+
++ (void)showNetworkActivityIndicator
+{
+    /* Foce call on main thread */
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [super showNetworkActivityIndicator];
+    });
+}
+
++ (void)hideNetworkActivityIndicator
+{
+    /* Foce call on main thread */
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [super hideNetworkActivityIndicator];
+    });
+}
+
+@end
+
 @implementation WebServices
 
 static WebServices *webServices;
@@ -53,7 +77,7 @@ static WebServices *webServices;
 	}
 	
 	/// - Build Request
-	ASIHTTPRequest *urlRequest = [[ASIHTTPRequest alloc] init];
+	ASIHTTPRequest *urlRequest = [[ThreadSafeHTTPRequest alloc] init];
     [urlRequest setDownloadProgressDelegate:progressDelegate];
     
 	NSMutableString *mutableString = [[NSMutableString alloc] initWithString:urlString];
