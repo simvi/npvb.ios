@@ -400,16 +400,18 @@
     [self doneAction];
     
     [(AppDelegate*)[[UIApplication sharedApplication] delegate] showLoadingView:@"Connexion en cours ..."];
-    
-    [self performSelectorInBackground:@selector(connectionPerformed) withObject:nil];
-    
-    
+
+    [self performSelectorInBackground:@selector(connectionPerformed:) withObject:@[[idTextField text], [pwdTextField text]]];
+
+
 }
 
-- (void)connectionPerformed {
-    
+- (void)connectionPerformed:(NSArray*)credentials {
+
     @autoreleasepool {
-        BOOL response = [WSDatas connectionWithId:[idTextField text] andPwd:[pwdTextField text]];
+        NSString *userId = credentials[0];
+        NSString *pwd = credentials[1];
+        BOOL response = [WSDatas connectionWithId: userId andPwd:pwd];
 
         [NSThread sleepForTimeInterval:1.0];
 

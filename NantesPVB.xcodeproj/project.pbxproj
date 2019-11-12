@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		D77434FD233A093000910B48 /* OthersNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434E2233A092D00910B48 /* OthersNavigationController.m */; };
 		D77434FE233A093000910B48 /* MemberDao.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434E6233A092E00910B48 /* MemberDao.m */; };
 		D77434FF233A093000910B48 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434E7233A092E00910B48 /* NSString+MD5.m */; };
+		D7743500233A093000910B48 /* Nantes PVB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D77434E8233A092E00910B48 /* Nantes PVB-Info.plist */; };
 		D7743501233A093000910B48 /* MembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434EC233A092F00910B48 /* MembersViewController.m */; };
 		D7743502233A093000910B48 /* NSNull+Protection.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434ED233A092F00910B48 /* NSNull+Protection.m */; };
 		D7743503233A093000910B48 /* NSDictionary+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434F2233A092F00910B48 /* NSDictionary+Null.m */; };
@@ -187,7 +188,6 @@
 		D7743695233A0BA500910B48 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7743692233A0BA500910B48 /* HomeViewController.m */; };
 		D7743696233A0BA500910B48 /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7743693233A0BA500910B48 /* HomeNavigationController.m */; };
 		D774369B233A135500910B48 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D7743697233A0FE900910B48 /* libxml2.tbd */; };
-		D78EF463234F319F00912052 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D78EF462234F319F00912052 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -202,8 +202,10 @@
 		D763EBA9228F057100565742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D763EBB0228F057200565742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D763EBB3228F057200565742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D763EBB5228F057200565742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D763EBBF228F0C5800565742 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D763EBC0228F0C5800565742 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D77434B6233A089A00910B48 /* NantesPVB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NantesPVB-Bridging-Header.h"; sourceTree = "<group>"; };
 		D77434B7233A089A00910B48 /* AppartenancesDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppartenancesDAO.h; sourceTree = "<group>"; };
 		D77434B8233A089A00910B48 /* AppartenancesDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppartenancesDAO.m; sourceTree = "<group>"; };
 		D77434BC233A091200910B48 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 		D77434E5233A092E00910B48 /* OtherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherTableViewCell.h; sourceTree = "<group>"; };
 		D77434E6233A092E00910B48 /* MemberDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberDao.m; sourceTree = "<group>"; };
 		D77434E7233A092E00910B48 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		D77434E8233A092E00910B48 /* Nantes PVB-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Nantes PVB-Info.plist"; sourceTree = "<group>"; };
 		D77434E9233A092E00910B48 /* NSDictionary+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Null.h"; sourceTree = "<group>"; };
 		D77434EA233A092E00910B48 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		D77434EC233A092F00910B48 /* MembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersViewController.m; sourceTree = "<group>"; };
@@ -472,9 +475,6 @@
 		D7743694233A0BA500910B48 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D7743697233A0FE900910B48 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		D7743699233A0FFA00910B48 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
-		D78EF462234F319F00912052 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D7D4A509234F795D00ADB9A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
-		D7D4A50A234F795D00ADB9A1 /* NantesPVB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NantesPVB-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -531,17 +531,24 @@
 			isa = PBXGroup;
 			children = (
 				D763EBA9228F057100565742 /* AppDelegate.swift */,
-				D7D4A509234F795D00ADB9A1 /* Info.plist */,
-				D7D4A50A234F795D00ADB9A1 /* NantesPVB-Bridging-Header.h */,
-				D763EBB2228F057200565742 /* LaunchScreen.storyboard */,
+				D7D8DAF2234C79D500976D7F /* ViewControllers */,
+				D7D8DAF1234C79A600976D7F /* NavigationControllers */,
 				D7D8DAF3234C7B0E00976D7F /* Data */,
 				D7D8DAF4234C7B4500976D7F /* Models */,
-				D7D8DAF6234C7B8300976D7F /* Extern */,
-				D7D8DAF1234C79A600976D7F /* NavigationControllers */,
-				D7D8DAF2234C79D500976D7F /* ViewControllers */,
-				D7EA970A234C92D30097B074 /* TableViewCells */,
+				D77434CB233A091C00910B48 /* EventTableViewCell.h */,
+				D77434CF233A091C00910B48 /* EventTableViewCell.m */,
 				D7D8DAF5234C7B6600976D7F /* Tabbar */,
+				D77434F1233A092F00910B48 /* MembersTableViewCell.h */,
+				D77434E1233A092D00910B48 /* MembersTableViewCell.m */,
+				D7D8DAF6234C7B8300976D7F /* Extern */,
+				D77434E5233A092E00910B48 /* OtherTableViewCell.h */,
+				D77434DE233A092D00910B48 /* OtherTableViewCell.m */,
+				D77434E8233A092E00910B48 /* Nantes PVB-Info.plist */,
+				D763EBB0228F057200565742 /* Assets.xcassets */,
 				D77435D9233A09DF00910B48 /* Supporting Files */,
+				D763EBB2228F057200565742 /* LaunchScreen.storyboard */,
+				D763EBB5228F057200565742 /* Info.plist */,
+				D77434B6233A089A00910B48 /* NantesPVB-Bridging-Header.h */,
 			);
 			path = NantesPVB;
 			sourceTree = "<group>";
@@ -722,7 +729,6 @@
 		D77435D9233A09DF00910B48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D763EBB0228F057200565742 /* Assets.xcassets */,
 				D77435DA233A09DF00910B48 /* Database */,
 				D77435DD233A09DF00910B48 /* Images */,
 			);
@@ -851,7 +857,6 @@
 				D774361E233A09DF00910B48 /* Default@2x.png */,
 				D774361F233A09DF00910B48 /* Default-HD55.png */,
 				D7743620233A09DF00910B48 /* Default-HD47.png */,
-				D78EF462234F319F00912052 /* Default-568h@2x.png */,
 				D7743621233A09DF00910B48 /* Default~iphone.png */,
 				D7743622233A09DF00910B48 /* Default-568h.png */,
 				D7743623233A09DF00910B48 /* Default.png */,
@@ -999,19 +1004,6 @@
 			path = Extern;
 			sourceTree = "<group>";
 		};
-		D7EA970A234C92D30097B074 /* TableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				D77434E5233A092E00910B48 /* OtherTableViewCell.h */,
-				D77434DE233A092D00910B48 /* OtherTableViewCell.m */,
-				D77434F1233A092F00910B48 /* MembersTableViewCell.h */,
-				D77434E1233A092D00910B48 /* MembersTableViewCell.m */,
-				D77434CB233A091C00910B48 /* EventTableViewCell.h */,
-				D77434CF233A091C00910B48 /* EventTableViewCell.m */,
-			);
-			path = TableViewCells;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1090,7 +1082,6 @@
 				D7743663233A09E000910B48 /* picto_tel@2x.png in Resources */,
 				D774367A233A09E000910B48 /* Default-568h.png in Resources */,
 				D7743665233A09E000910B48 /* onglet_1_selected.png in Resources */,
-				D78EF463234F319F00912052 /* Default-568h@2x.png in Resources */,
 				D774368F233A09E000910B48 /* Icon114x114.png in Resources */,
 				D7743652233A09E000910B48 /* etirements.png in Resources */,
 				D7743671233A09E000910B48 /* onglet_3_selected.png in Resources */,
@@ -1142,6 +1133,7 @@
 				D7743643233A09E000910B48 /* left_arrow@2x.png in Resources */,
 				D7743667233A09E000910B48 /* bkgd_tabbar@2x.png in Resources */,
 				D7743656233A09E000910B48 /* picto_mail@2x.png in Resources */,
+				D7743500233A093000910B48 /* Nantes PVB-Info.plist in Resources */,
 				D774368A233A09E000910B48 /* Icon@2x.png in Resources */,
 				D7743658233A09E000910B48 /* accessory.png in Resources */,
 				D763EBB4228F057200565742 /* LaunchScreen.storyboard in Resources */,
@@ -1198,16 +1190,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NantesPVB/Pods-NantesPVB-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-NantesPVB/Pods-NantesPVB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-NantesPVB/Pods-NantesPVB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1377,7 +1364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1432,7 +1419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1462,8 +1449,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework/Headers\"",
 					"${SDK_DIR}/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_FILE = NantesPVB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1472,7 +1458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = npvb.appid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DEV - Generic - 210619";
-				SWIFT_OBJC_BRIDGING_HEADER = "NantesPVB-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "NantesPVB/NantesPVB-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1499,8 +1485,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework/Headers\"",
 					"${SDK_DIR}/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_FILE = NantesPVB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1509,7 +1494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = npvb.appid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "NantesPVB AppStore - 071019";
-				SWIFT_OBJC_BRIDGING_HEADER = "NantesPVB-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "NantesPVB/NantesPVB-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
