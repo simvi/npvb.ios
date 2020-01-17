@@ -113,6 +113,7 @@
         NSMutableString *requeteSQL = [NSMutableString string];
         [requeteSQL setString:@"SELECT "];
         [requeteSQL appendString:@"COALESCE(accord,''), "];
+        [requeteSQL appendString:@"COALESCE(adhesion,''), "];
         [requeteSQL appendString:@"COALESCE(adresse,''), "];
         [requeteSQL appendString:@"COALESCE(codePostal,''), "];
         [requeteSQL appendString:@"COALESCE(dateNaissance,''), "];
@@ -144,12 +145,12 @@
             
             while (sqlite3_step(statement) == SQLITE_ROW) {
                 
-                NSString *name = [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 11)];
+                NSString *name = [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 12)];
                 if (![name hasPrefix:@"Invité"]) {
                     
                     Member *member = [[Member alloc] init];
                     
-                    NSString *telephones= [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 18)];
+                    NSString *telephones= [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 19)];
                     NSMutableArray *telArray = nil;
                     
                     if ([telephones length]>0) {
@@ -180,26 +181,26 @@
                     }
                     
                     [member setAccord:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 0)]];
-                    [member setAdresse:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 1)]];
-                    [member setCodePostal:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 2)]];
-                    [member setDateNaissance:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 3)]];
-                    [member setDescription:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 4)]];
-                    [member setDieuToutPuissant:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 5)]];
-                    [member setEmail:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 6)]];
-                    [member setEtat:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 7)]];
-                    [member setInternet:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 8)]];
-                    [member setLicenseVolley:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 9)]];
-                    [member setMessage:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 10)]];
+                    [member setAdhesion:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 1)]];
+                    [member setAdresse:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 2)]];
+                    [member setCodePostal:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 3)]];
+                    [member setDateNaissance:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 4)]];
+                    [member setDescription:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 5)]];
+                    [member setDieuToutPuissant:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 6)]];
+                    [member setEmail:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 7)]];
+                    [member setEtat:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 8)]];
+                    [member setInternet:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 9)]];
+                    [member setLicenseVolley:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 10)]];
+                    [member setMessage:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 11)]];
                     [member setNom:name];
-                    [member setPasswordMd5:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 12)]];
-                    [member setPremiereAdhesion:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 13)]];
-                    [member setPrenom:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 14)]];
-                    [member setProfession:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 15)]];
-                    [member setPseudonyme:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 16)]];
-                    [member setSexe:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 17)]];
+                    [member setPasswordMd5:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 13)]];
+                    [member setPremiereAdhesion:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 14)]];
+                    [member setPrenom:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 15)]];
+                    [member setProfession:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 16)]];
+                    [member setPseudonyme:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 17)]];
+                    [member setSexe:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 18)]];
                     [member setTelephones:telArray];
-                    [member setTitre:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 19)]];
-                    [member setAdhesion:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 19)]];
+                    [member setTitre:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 20)]];
                     [member setUrlPhoto:[NSString stringWithFormat:@"http://nantespvb.free.fr/Photos/Photo%@.jpg", [member pseudonyme]]];
                                     
                     [arrayOfMembers addObject:member];
