@@ -1,5 +1,5 @@
 //
-//  AppartenancesDAO.h
+//  AppartenancesDao.h
 //  Nantes PVB
 //
 //  Created by Marc Lievremont on 13/05/14.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "QueriesLibrary.h"
 
-@interface AppartenancesDAO : NSObject
+@interface AppartenancesDao : NSObject
 
 + (void)insertAppartenances:(NSMutableArray*)arrayParam;
 + (NSMutableArray*)getAppartenances:(NSString*)stringParam;

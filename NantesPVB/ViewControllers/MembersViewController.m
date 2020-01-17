@@ -10,7 +10,7 @@
 #import "MembersTableViewCell.h"
 #import "MemberDetailsViewController.h"
 #import "WSDatas.h"
-#import "AppartenancesDAO.h"
+#import "AppartenancesDao.h"
 #import "MemberDao.h"
 #import <NantesPVB-Swift.h>
 
@@ -120,7 +120,7 @@
         [subiview removeFromSuperview];
     }
     
-    self.sortArray = [AppartenancesDAO getEquipes];
+    self.sortArray = [AppartenancesDao getEquipes];
     
     CGFloat cumulatedX = 5.0;
     int cpt = 0;

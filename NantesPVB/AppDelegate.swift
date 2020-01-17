@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if let joints = WSDatas.getAppartenances(), joints.count > 0 {
-            AppartenancesDAO.insertAppartenances(joints)
+            AppartenancesDao.insertAppartenances(joints)
         }
         
         let members = WSDatas.getMembers() 

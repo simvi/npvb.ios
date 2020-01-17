@@ -15,7 +15,7 @@
 		D763EBB4228F057200565742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D763EBB2228F057200565742 /* LaunchScreen.storyboard */; };
 		D763EBC1228F0C5800565742 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D763EBBF228F0C5800565742 /* LoginViewController.swift */; };
 		D763EBC2228F0C5800565742 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D763EBC0228F0C5800565742 /* LoginViewController.xib */; };
-		D77434B9233A089A00910B48 /* AppartenancesDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434B8233A089A00910B48 /* AppartenancesDAO.m */; };
+		D77434B9233A089A00910B48 /* AppartenancesDao.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434B8233A089A00910B48 /* AppartenancesDao.m */; };
 		D77434C3233A091200910B48 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434BC233A091200910B48 /* CalendarViewController.m */; };
 		D77434C5233A091200910B48 /* CalendarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434C1233A091200910B48 /* CalendarNavigationController.m */; };
 		D77434D0233A091C00910B48 /* EventDao.m in Sources */ = {isa = PBXBuildFile; fileRef = D77434C6233A091B00910B48 /* EventDao.m */; };
@@ -206,8 +206,8 @@
 		D763EBBF228F0C5800565742 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D763EBC0228F0C5800565742 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D77434B6233A089A00910B48 /* NantesPVB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NantesPVB-Bridging-Header.h"; sourceTree = "<group>"; };
-		D77434B7233A089A00910B48 /* AppartenancesDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppartenancesDAO.h; sourceTree = "<group>"; };
-		D77434B8233A089A00910B48 /* AppartenancesDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppartenancesDAO.m; sourceTree = "<group>"; };
+		D77434B7233A089A00910B48 /* AppartenancesDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppartenancesDao.h; sourceTree = "<group>"; };
+		D77434B8233A089A00910B48 /* AppartenancesDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppartenancesDao.m; sourceTree = "<group>"; };
 		D77434BC233A091200910B48 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		D77434BD233A091200910B48 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		D77434BF233A091200910B48 /* CalendarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarNavigationController.h; sourceTree = "<group>"; };
@@ -935,8 +935,8 @@
 		D7D8DAF3234C7B0E00976D7F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				D77434B7233A089A00910B48 /* AppartenancesDAO.h */,
-				D77434B8233A089A00910B48 /* AppartenancesDAO.m */,
+				D77434B7233A089A00910B48 /* AppartenancesDao.h */,
+				D77434B8233A089A00910B48 /* AppartenancesDao.m */,
 				D77434CC233A091C00910B48 /* EventDao.h */,
 				D77434C6233A091B00910B48 /* EventDao.m */,
 				D77434DF233A092D00910B48 /* MemberDao.h */,
@@ -1214,7 +1214,7 @@
 				D77435C2233A097200910B48 /* ASIFormDataRequest.m in Sources */,
 				D77435CF233A097200910B48 /* SBJsonUTF8Stream.m in Sources */,
 				D77435BC233A097200910B48 /* ASIS3ServiceRequest.m in Sources */,
-				D77434B9233A089A00910B48 /* AppartenancesDAO.m in Sources */,
+				D77434B9233A089A00910B48 /* AppartenancesDao.m in Sources */,
 				D7743502233A093000910B48 /* NSNull+Protection.m in Sources */,
 				D7743519233A094100910B48 /* WebServices.m in Sources */,
 				D7743504233A093000910B48 /* QueriesLibrary.m in Sources */,

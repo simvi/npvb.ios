@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 #import "MemberDao.h"
 #import "WSDatas.h"
-#import "AppartenancesDAO.h"
+#import "AppartenancesDao.h"
 #import <NantesPVB-Swift.h>
 
 @implementation HomeViewController
@@ -443,7 +443,7 @@
        
         if (member) {
             
-            [member setArrayOfAppartenances:[AppartenancesDAO getAppartenances:[idTextField text]]];
+            [member setArrayOfAppartenances:[AppartenancesDao getAppartenances:[idTextField text]]];
 
             //NSLog(@"connection member arrayOfAppartenances] count: %i", (int)[[member arrayOfAppartenances] count]);
             
