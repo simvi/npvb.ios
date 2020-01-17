@@ -38,9 +38,8 @@
         [requeteSQL appendString:@"intitule, "];
         [requeteSQL appendString:@"lieu, "];
         [requeteSQL appendString:@"adresse, "];
-        [requeteSQL appendString:@"adversaire, "];
-        [requeteSQL appendString:@"comments) "];
-        [requeteSQL appendString:@"VALUES (?,?,?,?,?,?,?,?,?,?)"]; // 12 champs
+        [requeteSQL appendString:@"adversaire) "];
+        [requeteSQL appendString:@"VALUES (?,?,?,?,?,?,?,?,?)"]; // 9 champs
         
         for (NSDictionary *dict in arrayParam) {
             
@@ -55,7 +54,6 @@
                 sqlite3_bind_text(statement, 7, [[dict objectForKey:@"Lieu"] UTF8String], -1, SQLITE_TRANSIENT);
                 sqlite3_bind_text(statement, 8, [[dict objectForKey:@"Adresse"] UTF8String], -1, SQLITE_TRANSIENT);
                 sqlite3_bind_text(statement, 9, [[dict objectForKey:@"Adversaire"] UTF8String], -1, SQLITE_TRANSIENT);
-                sqlite3_bind_text(statement, 10, [[dict objectForKey:@"Analyse"] UTF8String], -1, SQLITE_TRANSIENT);
                 
 				int success = sqlite3_step(statement);
 				
@@ -90,10 +88,7 @@
         [requeteSQL appendString:@"COALESCE(intitule,''), "];
         [requeteSQL appendString:@"COALESCE(lieu,''), "];
         [requeteSQL appendString:@"COALESCE(adresse,''), "];
-        [requeteSQL appendString:@"COALESCE(adversaire,''), "];
-        [requeteSQL appendString:@"COALESCE(domicile,''), "];
-        [requeteSQL appendString:@"COALESCE(resultat,''), "];
-        [requeteSQL appendString:@"COALESCE(comments,'') "];
+        [requeteSQL appendString:@"COALESCE(adversaire,'') "];
         [requeteSQL appendString:@"FROM events "];
         [requeteSQL appendString:@"ORDER BY date_text ASC"];
         
@@ -117,9 +112,6 @@
                 [event setLieu:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 5)]];
                 [event setAdresse:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 6)]];
                 [event setAdversaire:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 7)]];
-                [event setDomicile:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 8)]];
-                [event setResultat:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 9)]];
-                [event setComments:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 10)]];
                 
                 if (![[event etat] isEqualToString:@"A"]) {
                     // si l'event est pas annulé
@@ -141,7 +133,6 @@
                 else {
                     [event setColor:[UIColor colorWithRed:221.0/255.0 green:17.0/255.0 blue:34.0/255.0 alpha:1.0]];
                 }
-                
                 
                 [arrayOfEvents addObject:event];
                 [event release];
@@ -186,11 +177,7 @@
         [requeteSQL appendString:@"COALESCE(intitule,''), "];
         [requeteSQL appendString:@"COALESCE(lieu,''), "];
         [requeteSQL appendString:@"COALESCE(adresse,''), "];
-        [requeteSQL appendString:@"COALESCE(adversaire,''), "];
-        [requeteSQL appendString:@"COALESCE(domicile,''), "];
-        [requeteSQL appendString:@"COALESCE(resultat,''), "];
-        [requeteSQL appendString:@"COALESCE(date_text,''), "];
-        [requeteSQL appendString:@"COALESCE(comments,'') "];
+        [requeteSQL appendString:@"COALESCE(adversaire,'') "];
         [requeteSQL appendString:@"FROM events "];
         [requeteSQL appendFormat:@"WHERE date_text >= '%@' ", [dateFormatter stringFromDate:dateParam]];
         [requeteSQL appendString:@"ORDER BY date_text ASC"];
@@ -215,9 +202,6 @@
                 [event setLieu:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 5)]];
                 [event setAdresse:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 6)]];
                 [event setAdversaire:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 7)]];
-                [event setDomicile:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 8)]];
-                [event setResultat:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 9)]];
-                [event setComments:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 10)]];
                 
                 if (![[event etat] isEqualToString:@"A"]) {
                     // si l'event est pas annulé
@@ -279,10 +263,7 @@
         [requeteSQL appendString:@"COALESCE(intitule,''), "];
         [requeteSQL appendString:@"COALESCE(lieu,''), "];
         [requeteSQL appendString:@"COALESCE(adresse,''), "];
-        [requeteSQL appendString:@"COALESCE(adversaire,''), "];
-        [requeteSQL appendString:@"COALESCE(domicile,''), "];
-        [requeteSQL appendString:@"COALESCE(resultat,''), "];
-        [requeteSQL appendString:@"COALESCE(comments,'') "];
+        [requeteSQL appendString:@"COALESCE(adversaire,'') "];
         [requeteSQL appendString:@"FROM events "];
         [requeteSQL appendString:@"ORDER BY date ASC"];
         
@@ -313,9 +294,6 @@
                     [event setLieu:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 5)]];
                     [event setAdresse:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 6)]];
                     [event setAdversaire:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 7)]];
-                    [event setDomicile:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 8)]];
-                    [event setResultat:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 9)]];
-                    [event setComments:[NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 10)]];
                     
                     if (![[event etat] isEqualToString:@"A"]) {
                         // si l'event est pas annulé

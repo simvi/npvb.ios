@@ -19,10 +19,7 @@
 @synthesize lieu;
 @synthesize adresse;
 @synthesize adversaire;
-@synthesize domicile;
-@synthesize resultat;
 @synthesize color;
-@synthesize comments;
 
 - (void)dealloc {
     [date release];
@@ -33,10 +30,7 @@
     [lieu release];
     [adresse release];
     [adversaire release];
-    [domicile release];
-    [resultat release];
     [color release];
-    [comments release];
     [super dealloc];
 }
 
