@@ -1,15 +1,15 @@
 //
-//  AppartenancesDAO.m
+//  AppartenancesDao.m
 //  Nantes PVB
 //
 //  Created by Marc Lievremont on 13/05/14.
 //  Copyright (c) 2014 Personnal. All rights reserved.
 //
 
-#import "AppartenancesDAO.h"
+#import "AppartenancesDao.h"
 #import "QueriesLibrary.h"
 
-@implementation AppartenancesDAO
+@implementation AppartenancesDao
 
 + (void)insertAppartenances:(NSMutableArray*)arrayParam {
     
