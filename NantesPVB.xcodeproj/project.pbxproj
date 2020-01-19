@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56D5C42823D4746C004754E1 /* Appartenance.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5C42723D4746C004754E1 /* Appartenance.m */; };
 		A1F036265BF87C49C0037BA1 /* Pods_NantesPVB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FDBC31ED39B7495B9FD9B /* Pods_NantesPVB.framework */; };
 		D718AD83233A6B1300671A3A /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D718AD7F233A6B1200671A3A /* CustomTabBarController.m */; };
 		D718AD84233A6B1300671A3A /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D718AD82233A6B1300671A3A /* CustomTabBarItem.m */; };
@@ -192,6 +193,8 @@
 
 /* Begin PBXFileReference section */
 		56A991D90305AA8423C96DC6 /* Pods-NantesPVB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NantesPVB.debug.xcconfig"; path = "Target Support Files/Pods-NantesPVB/Pods-NantesPVB.debug.xcconfig"; sourceTree = "<group>"; };
+		56D5C42623D4746C004754E1 /* Appartenance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appartenance.h; sourceTree = "<group>"; };
+		56D5C42723D4746C004754E1 /* Appartenance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appartenance.m; sourceTree = "<group>"; };
 		7981FB67BCA37FA2F9493AFC /* Pods-NantesPVB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NantesPVB.release.xcconfig"; path = "Target Support Files/Pods-NantesPVB/Pods-NantesPVB.release.xcconfig"; sourceTree = "<group>"; };
 		819FDBC31ED39B7495B9FD9B /* Pods_NantesPVB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NantesPVB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D718AD7F233A6B1200671A3A /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
@@ -955,6 +958,8 @@
 		D7D8DAF4234C7B4500976D7F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				56D5C42623D4746C004754E1 /* Appartenance.h */,
+				56D5C42723D4746C004754E1 /* Appartenance.m */,
 				D77434C9233A091B00910B48 /* Event.h */,
 				D77434CD233A091C00910B48 /* Event.m */,
 				D77434DB233A092C00910B48 /* Member.h */,
@@ -1281,6 +1286,7 @@
 				D77435BD233A097200910B48 /* ASIS3ObjectRequest.m in Sources */,
 				D77435A4233A097200910B48 /* SDWebImageDownloader.m in Sources */,
 				D77435AE233A097200910B48 /* CalendarWeekView.m in Sources */,
+				56D5C42823D4746C004754E1 /* Appartenance.m in Sources */,
 				D77435B0233A097200910B48 /* WeekTileParam.m in Sources */,
 				D7743696233A0BA500910B48 /* HomeNavigationController.m in Sources */,
 				D77435C3233A097200910B48 /* ASIDataDecompressor.m in Sources */,
