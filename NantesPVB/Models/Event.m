@@ -20,6 +20,7 @@
 @synthesize adresse;
 @synthesize adversaire;
 @synthesize color;
+@synthesize comments;
 
 - (void)dealloc {
     [date release];
@@ -31,6 +32,7 @@
     [adresse release];
     [adversaire release];
     [color release];
+    [comments release];
     [super dealloc];
 }
 
