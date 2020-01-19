@@ -19,8 +19,6 @@
     NSString *lieu;
     NSString *adresse;
     NSString *adversaire;
-    NSString *domicile;
-    NSString *resultat;
     UIColor *color;
     NSString *comments;
 
@@ -35,8 +33,6 @@
 @property (nonatomic, retain) NSString *lieu;
 @property (nonatomic, retain) NSString *adresse;
 @property (nonatomic, retain) NSString *adversaire;
-@property (nonatomic, retain) NSString *domicile;
-@property (nonatomic, retain) NSString *resultat;
 @property (nonatomic, retain) UIColor *color;
 @property (nonatomic, retain) NSString *comments;
 

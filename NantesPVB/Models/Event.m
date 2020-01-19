@@ -19,8 +19,6 @@
 @synthesize lieu;
 @synthesize adresse;
 @synthesize adversaire;
-@synthesize domicile;
-@synthesize resultat;
 @synthesize color;
 @synthesize comments;
 
@@ -33,8 +31,6 @@
     [lieu release];
     [adresse release];
     [adversaire release];
-    [domicile release];
-    [resultat release];
     [color release];
     [comments release];
     [super dealloc];
