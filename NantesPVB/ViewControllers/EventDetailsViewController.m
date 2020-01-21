@@ -267,7 +267,7 @@
 
 - (void)loadPresence {
     
-     [(AppDelegate*)[[UIApplication sharedApplication] delegate] showLoadingView:@"Chargement des inscrits ..."];
+     [(AppDelegate*)[[UIApplication sharedApplication] delegate] showLoadingView:@"Chargement des inscrits..."];
     
     [self performSelectorInBackground:@selector(loadPresencePerformed) withObject:nil];
     
@@ -386,7 +386,7 @@
         // Si c'est son equipe ou asso entrainement
         if (isOk) {
             
-             [(AppDelegate*)[[UIApplication sharedApplication] delegate] showLoadingView:(isSubscribe?@"Désinscription en cours ...":@"Inscription en cours ...")];
+             [(AppDelegate*)[[UIApplication sharedApplication] delegate] showLoadingView:(isSubscribe?@"Désinscription en cours...":@"Inscription en cours...")];
             
             [self performSelectorInBackground:@selector(inscriptionPerformed) withObject:nil];
         }

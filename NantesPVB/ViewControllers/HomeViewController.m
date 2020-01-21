@@ -399,7 +399,7 @@
     
     [self doneAction];
     
-    [(AppDelegate*)[[UIApplication sharedApplication] delegate] showLoadingView:@"Connexion en cours ..."];
+    [(AppDelegate*)[[UIApplication sharedApplication] delegate] showLoadingView:@"Connexion en cours..."];
 
     [self performSelectorInBackground:@selector(connectionPerformed:) withObject:@[[idTextField text], [pwdTextField text]]];
 
